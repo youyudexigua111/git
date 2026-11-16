@@ -38,6 +38,9 @@ venv*/
 .pytest_cache/
 .mypy_cache/
 
+# ---- 本地工具状态 ----
+.workbuddy/
+
 # ---- 日志 / 临时文件 ----
 *.log
 *.tmp
