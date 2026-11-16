@@ -1,13 +1,24 @@
-# Git
+# git
 
-本仓库由 `D:\15037\Git` 初始化。
+个人 Git 仓库起始骨架。
 
-## 说明
-
-目前是空的仓库骨架，项目文件后续补充。
-
-## 使用
+## 快速开始
 
 ```bash
-git clone <repo-url>
+git clone git@github.com:youyudexigua111/git.git
+cd git
 ```
+
+## 目录结构
+
+```
+.
+├── README.md       # 项目说明
+└── .gitignore      # 忽略规则
+```
+
+## 约定
+
+- 主分支：`main`
+- 提交信息参考 [Conventional Commits](https://www.conventionalcommits.org/)：`feat:` / `fix:` / `docs:` / `chore:`
+- 本地工具状态目录 `.workbuddy/` 不入库

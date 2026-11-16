@@ -1,0 +1,24 @@
+# 统一换行符：仓库内一律存 LF，检出时由 Git 按平台转换
+* text=auto
+
+# 显式声明二进制，避免 Git 尝试做文本转换
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.ico   binary
+*.pdf   binary
+*.zip   binary
+*.7z    binary
+*.gz    binary
+*.woff  binary
+*.woff2 binary
+*.ttf   binary
+
+# 脚本类强制 LF，避免在 Windows 上因 CRLF 导致 shebang 失效
+*.sh    text eol=lf
+*.py    text eol=lf
+
+# 批处理强制 CRLF
+*.bat   text eol=crlf
+*.cmd   text eol=crlf
